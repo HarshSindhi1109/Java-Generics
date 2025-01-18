@@ -1,6 +1,6 @@
 package org.example;
 
-public class DictionaryData<K, V> {
+public class DictionaryData<K extends Integer, V> {
     private K key;
     private V value;
 
@@ -16,5 +16,9 @@ public class DictionaryData<K, V> {
     }
     public String toString() {
         return "Data{" + "key= " + key + ", value= " + value + "}";
+    }
+
+    public <N extends Number, E> void display(N number, E element) {
+        System.out.println("Number: "+number + " Element: "+element);
     }
 }

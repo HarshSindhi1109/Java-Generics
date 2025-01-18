@@ -60,5 +60,7 @@ public class Main {
 
         Integer[] intArray = {101, 102, 103, 104, 105};
         new PrintArrayData().printArray(intArray);
+
+        data.display(625.526f, "dollar");
     }
 }
