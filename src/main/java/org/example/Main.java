@@ -37,5 +37,9 @@ public class Main {
         String  x = new Data("Sodium").toString();
         System.out.println(x);
         System.out.println(elements);
+
+        GenericData<String> genericData = new GenericData<>("Some random data");
+        String str = genericData.getData();
+        System.out.println(str);
     }
 }
