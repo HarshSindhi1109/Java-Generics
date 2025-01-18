@@ -42,12 +42,17 @@ public class Main {
         String str = genericData.getData();
         System.out.println(str);
 
-        List<Data> lst = new LinkedList<>();
-        lst.add(new Data("Adam"));
-        lst.add(new Data("Eve"));
+        List<GenericData<Object>> lst = new LinkedList<>();
+        lst.add(new GenericData<>("Adam"));
+        lst.add(new GenericData<>("Eve"));
+        lst.add(new GenericData<>(5.25));
+        lst.add(new GenericData<>(18));
 
-        for(Data d : lst) {
-            System.out.println(d);
+        for(GenericData<Object> d : lst) {
+            System.out.println(d.getData());
         }
+
+        DictionaryData<Integer, String> data = new DictionaryData<>(4, "Death");
+        System.out.println(data.toString());
     }
 }
