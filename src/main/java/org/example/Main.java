@@ -54,5 +54,11 @@ public class Main {
 
         DictionaryData<Integer, String> data = new DictionaryData<>(4, "Death");
         System.out.println(data.toString());
+
+        String[] stringArray = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+        new PrintArrayData().printArray(stringArray);
+
+        Integer[] intArray = {101, 102, 103, 104, 105};
+        new PrintArrayData().printArray(intArray);
     }
 }
