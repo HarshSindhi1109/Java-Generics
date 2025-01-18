@@ -62,5 +62,13 @@ public class Main {
         new PrintArrayData().printArray(intArray);
 
         data.display(625.526f, "dollar");
+
+        List<Vehicle> list = new ArrayList<>();
+        list.add(new Vehicle(40));
+        list.add(new Vehicle(60));
+        list.add(new Vehicle(50));
+        list.add(new Car(120, "S40"));
+
+        Car.display(list);
     }
 }
