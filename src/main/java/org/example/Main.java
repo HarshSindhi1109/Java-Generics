@@ -41,5 +41,13 @@ public class Main {
         GenericData<String> genericData = new GenericData<>("Some random data");
         String str = genericData.getData();
         System.out.println(str);
+
+        List<Data> lst = new LinkedList<>();
+        lst.add(new Data("Adam"));
+        lst.add(new Data("Eve"));
+
+        for(Data d : lst) {
+            System.out.println(d);
+        }
     }
 }
